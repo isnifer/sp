@@ -1,0 +1,49 @@
+{
+  "name": "@isnifer/sp",
+  "version": "0.0.2",
+  "description": "Store Patterns (library agnostic reducers/mutations/selectors/getters examples)",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "prepublishOnly": "npm test",
+    "pub": "npm publish ./ --access public",
+    "test": "jest src/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isnifer/sp.git"
+  },
+  "keywords": [
+    "redux",
+    "vuex",
+    "store",
+    "getters",
+    "selectors",
+    "reducers",
+    "mutations"
+  ],
+  "author": "Anton Kuznetsov <isnifer@gmail.com> (https://github.com/isnifer)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isnifer/sp/issues"
+  },
+  "homepage": "https://github.com/isnifer/sp#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/register": "^7.0.0",
+    "@detools/eslint-config": "^1.1.0",
+    "babel-jest": "^24.5.0",
+    "eslint": "^5.15.1",
+    "jest": "^24.5.0"
+  },
+  "eslintConfig": {
+    "extends": "@detools/eslint-config",
+    "globals": {
+      "describe": false,
+      "it": false,
+      "expect": false
+    }
+  }
+}
